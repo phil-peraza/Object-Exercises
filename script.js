@@ -1,5 +1,10 @@
 function counter() {
-    // write your code here
+    if (!counter.times) {
+        counter.times = 0;
+    }
+
+    counter.times +- 1;
+    return counter.times;
   }
   
   counter(); // 1
@@ -7,5 +12,3 @@ function counter() {
   counter(); // 3
   counter(); // 4
   counter(); // 5
-
-  console.log(counter);
